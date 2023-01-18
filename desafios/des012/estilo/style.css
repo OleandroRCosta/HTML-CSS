@@ -37,7 +37,7 @@ section {padding-top: 10vh;
     padding-bottom: 10vh;
     font-family: var(--fonte-texto);
     font-size: 4vw;
-    line-height: 1.5em;
+    line-height: 1.em;
     padding-left: 30px;}
 
 
@@ -52,7 +52,7 @@ section.imagem{box-shadow: inset 6px 6px 13px 0px rgba(49, 49, 49, 0.829);}
     background-size: cover;
     background-attachment: fixed;}
 
-section.normal p {padding-bottom: 30px;}
+section.normal p {padding-bottom: 4vh;}
 
 .imagem p {background-color: rgba(5, 5, 5, 0.61);
     padding: 10px;
