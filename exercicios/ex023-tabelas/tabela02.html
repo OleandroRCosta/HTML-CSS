@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+
+        table{border-collapse: collapse;}
+
+        thead{background-color: gray;
+            color: white;}
+
+        thead > tr > th {position: sticky;
+            top: -1px;
+            background-color: gray;}    
+
+        caption{font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;}
+        
+        tbody > tr:nth-child(even) {background-color: lightgray;}
+
+        tbody > tr:nth-child(odd) {background-color: bisque;}
+            
+
+        th, tr, td {border: 1px solid black;
+            padding: 15px;}
+        
+        tfoot{background-color: gray;
+            color: white;}  
+
+        td.num{text-align: right;}
+        td.perc{text-align: center;}        
+
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+
+    <table>
+        <caption>População dos Estados do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da População Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+                <td class="perc">22,2%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+                <td class="perc">10,0%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+                <td class="perc">8,0%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.659.023</td>
+                <td class="perc">7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.835.379</td>
+                <td class="perc">5,7%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.088.065</td>
+                <td class="perc">5,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.051.113</td>
+                <td class="perc">4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.936.431</td>
+                <td class="perc">4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.442.962</td>
+                <td class="perc">4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.762.154</td>
+                <td class="perc">3,7%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6.950.976</td>
+                <td class="perc">3,3%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.800.605</td>
+                <td class="perc">3,3%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.108.508</td>
+                <td class="perc">1,9%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.030.961</td>
+                <td class="perc">1,9%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.952.262</td>
+                <td class="perc">1,9%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.784.239</td>
+                <td class="perc">1,8%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.303.953</td>
+                <td class="perc">1,6%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.270.174</td>
+                <td class="perc">1,6%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.125.254</td>
+                <td class="perc">1,5%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.923.369</td>
+                <td class="perc">1,4%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.833.742</td>
+                <td class="perc">1,4%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.211.868</td>
+                <td class="perc">1,1%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.616.379</td>
+                <td class="perc">0,8%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.584.306</td>
+                <td class="perc">0,8%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">829.780</td>
+                <td class="perc">0,4%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">774.268</td>
+                <td class="perc">0,4%</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">634.805</td>
+                <td class="perc">0,3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num">207.883.699</td>
+                <td class="perc">100,0%</td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa aliquam doloribus minima, ea laudantium adipisci velit ipsa ullam doloremque quis ipsum placeat non officia possimus. Dignissimos ea ullam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, nisi optio sapiente dolore beatae nemo, iusto ad repellendus, ducimus eum? Consectetur itaque nisi eius hic, id quia molestias dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ipsam earum, possimus quis dolorem itaque voluptas dolore alias quia expedita amet. Ratione reiciendis dolorum recusandae ad, similique iste ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aperiam modi totam maiores officia delectus magni error, quisquam repellendus doloribus ex porro omnis itaque, beatae eaque esse vel amet reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa aliquam doloribus minima, ea laudantium adipisci velit ipsa ullam doloremque quis ipsum placeat non officia possimus. Dignissimos ea ullam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, nisi optio sapiente dolore beatae nemo, iusto ad repellendus, ducimus eum? Consectetur itaque nisi eius hic, id quia molestias dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ipsam earum, possimus quis dolorem itaque voluptas dolore alias quia expedita amet. Ratione reiciendis dolorum recusandae ad, similique iste ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aperiam modi totam maiores officia delectus magni error, quisquam repellendus doloribus ex porro omnis itaque, beatae eaque esse vel amet reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa aliquam doloribus minima, ea laudantium adipisci velit ipsa ullam doloremque quis ipsum placeat non officia possimus. Dignissimos ea ullam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, nisi optio sapiente dolore beatae nemo, iusto ad repellendus, ducimus eum? Consectetur itaque nisi eius hic, id quia molestias dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ipsam earum, possimus quis dolorem itaque voluptas dolore alias quia expedita amet. Ratione reiciendis dolorum recusandae ad, similique iste ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aperiam modi totam maiores officia delectus magni error, quisquam repellendus doloribus ex porro omnis itaque, beatae eaque esse vel amet reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa aliquam doloribus minima, ea laudantium adipisci velit ipsa ullam doloremque quis ipsum placeat non officia possimus. Dignissimos ea ullam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, nisi optio sapiente dolore beatae nemo, iusto ad repellendus, ducimus eum? Consectetur itaque nisi eius hic, id quia molestias dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ipsam earum, possimus quis dolorem itaque voluptas dolore alias quia expedita amet. Ratione reiciendis dolorum recusandae ad, similique iste ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aperiam modi totam maiores officia delectus magni error, quisquam repellendus doloribus ex porro omnis itaque, beatae eaque esse vel amet reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa aliquam doloribus minima, ea laudantium adipisci velit ipsa ullam doloremque quis ipsum placeat non officia possimus. Dignissimos ea ullam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, nisi optio sapiente dolore beatae nemo, iusto ad repellendus, ducimus eum? Consectetur itaque nisi eius hic, id quia molestias dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ipsam earum, possimus quis dolorem itaque voluptas dolore alias quia expedita amet. Ratione reiciendis dolorum recusandae ad, similique iste ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aperiam modi totam maiores officia delectus magni error, quisquam repellendus doloribus ex porro omnis itaque, beatae eaque esse vel amet reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa aliquam doloribus minima, ea laudantium adipisci velit ipsa ullam doloremque quis ipsum placeat non officia possimus. Dignissimos ea ullam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, nisi optio sapiente dolore beatae nemo, iusto ad repellendus, ducimus eum? Consectetur itaque nisi eius hic, id quia molestias dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ipsam earum, possimus quis dolorem itaque voluptas dolore alias quia expedita amet. Ratione reiciendis dolorum recusandae ad, similique iste ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aperiam modi totam maiores officia delectus magni error, quisquam repellendus doloribus ex porro omnis itaque, beatae eaque esse vel amet reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa aliquam doloribus minima, ea laudantium adipisci velit ipsa ullam doloremque quis ipsum placeat non officia possimus. Dignissimos ea ullam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, nisi optio sapiente dolore beatae nemo, iusto ad repellendus, ducimus eum? Consectetur itaque nisi eius hic, id quia molestias dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ipsam earum, possimus quis dolorem itaque voluptas dolore alias quia expedita amet. Ratione reiciendis dolorum recusandae ad, similique iste ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aperiam modi totam maiores officia delectus magni error, quisquam repellendus doloribus ex porro omnis itaque, beatae eaque esse vel amet reprehenderit.</p>
+</body>
+</html>
