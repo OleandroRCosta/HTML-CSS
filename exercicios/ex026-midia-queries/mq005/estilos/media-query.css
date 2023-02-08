@@ -6,7 +6,11 @@
     menu {display: block;
         margin-left: 5%;}
 
-    menu > ul > li {display: inline-block;}
+    menu > ul > li {display: inline-block;
+        margin-bottom: 4px;}
+
+    menu > ul > li > a  {border-top: none;
+        border-radius: 5px;}
 
     main {width: 768px;}
 
